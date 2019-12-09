@@ -9,9 +9,9 @@
 </head>
 <body>
 <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
         <a class="navbar-brand" href="#">
-            <img src="https://res.cloudinary.com/finzy/image/upload/v1491394379/logoWeb1x_1_thzngg.png" alt="">
+            <img src="https://res.cloudinary.com/finzy/image/upload/v1491394379/logoWeb1x_1_thzngg.png" alt="Logo">
         </a>
         <a class="navbar-brand" href="#">
             <img src="https://finzy.com/assets/images/badge_small.png" width="60px" alt="">
@@ -21,23 +21,24 @@
         </span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon bg-dark"></span>
         </button>
 
-        <ul class="navbar-nav ml-auto justify-content-end">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Borrow </a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Invest</a>
-            </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <p>Contact Us</p>
+                    </a>
+                </li>
+                <li>
+                    <button class="btn">
+                        Login
+                    </button>
+                </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Login</a>
-            </li>
-            <button type="button" class="btn">Apply now
-            </button>
         </ul>
+        </div>
     </nav>
 </div>
 
@@ -51,21 +52,14 @@
                 </label>
             </div>
             <div class="apply-loan-div-column col-sm-3">
-                <%--                <label class="apply-loan-div-label" for="loan-purpose">Loan Purpose <br>--%>
-                <%--                    <input class="apply-loan-div-input" type="number" id="loan-purpose" placeholder="Upto 5,00,000">--%>
-                <%--                </label>--%>
+
                 <label class="apply-loan-div-label">Loan Purpose</label>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                        Loan Purpose
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
+                <select class="custom-dropdown" name="cars">
+                    <option class="dropdown-option" value="volvo">Volvo</option>
+                    <option class="dropdown-option" value="saab">Saab</option>
+                    <option class="dropdown-option" value="fiat">Fiat</option>
+                    <option class="dropdown-option" value="audi">Audi</option>
+                </select>
 
             </div>
             <div class="apply-loan-div-column col-sm-3">
@@ -259,14 +253,15 @@
 <%--    Team section--%>
     <div class="core-team ">
         <div class="row  align-items-center justify-content-center">
-            <h1>How finzy works</h1>
+            <h1>Core Team</h1>
         </div>
         <div class="core-team-description row align-items-center mt-4 justify-content-center">
-            <p>finzy connects personal loan borrowers with investors</p>
+            <p>The founding team of Finzy are professionals who have excelled in their fields ranging across finance, technology, product, sales, marketing and leadership.</p>
         </div>
-        <div class="container-fluid">
+        <br>
+        <div class="container-fluid ">
             <div class="row m-0 p-0 justify-content-center">
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card" style="width: 25rem;">
                         <img src="https://res.cloudinary.com/finzy/image/upload/v1538986872/amit_ihskhe.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center"">
@@ -276,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-xm-6 c">
                     <div class="card" style="width: 25rem;">
                         <img src="https://res.cloudinary.com/finzy/image/upload/v1538986872/abhinandan_aukpdl.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center"">
@@ -286,7 +281,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card" style="width: 25rem;">
                         <img src="https://res.cloudinary.com/finzy/image/upload/v1538986872/vishwas_ztkchg.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">
@@ -296,7 +291,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card" style="width: 25rem;">
                         <img src="https://res.cloudinary.com/finzy/image/upload/v1538986872/apoorv_mt9lo0.jpg" class="card-img-top" alt="...">
                         <div class="card-body text-center">

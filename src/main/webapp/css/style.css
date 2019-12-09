@@ -4,17 +4,32 @@
 }
 
 ul li a {
-    color: white;
-    border-bottom:2px blue solid;
+    border-bottom: 2px blue solid;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+ul li a p {
+    font-size: 1rem;
+    color: #0d3ab3;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .btn {
     background-color: #0d3ab3;
     color: white;
-    padding: 1rem;
     letter-spacing: 0.2rem;
     border-radius: 0.3rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
 }
+
+.navbar {
+    align-items: center;
+    justify-content: center;
+}
+
 
 .bg-image {
     background-image: url("https://res.cloudinary.com/finzy/image/upload/Final1_oogh7d");
@@ -25,6 +40,7 @@ ul li a {
 
 .loan-heading {
     color: white;
+    align-self: center;
 }
 
 .apply-loan-div {
@@ -32,7 +48,13 @@ ul li a {
     color: black;
     min-width: 80%;
     border-radius: 1rem;
+    margin-bottom: 2rem;
  }
+
+.color-class {
+    color: white;
+    border: 2px solid black;
+}
 
 .apply-loan-div-column{
     min-height: 90%;
@@ -48,6 +70,16 @@ ul li a {
     height: 4vh;
     margin-top: 1rem;
 }
+
+.custom-dropdown {
+    color: black;
+    background-color: white;
+    width: 13vw;
+    height: 4vh;
+    margin-top: -1.5rem;
+    border: 0;
+}
+
 
 .apply-loan-div-input:focus {
     border-color: navy;
@@ -163,4 +195,9 @@ body,html {
 }
 .card-body {
     background-color:  #FCFCFC;
+}
+
+
+@media screen and (max-width: 720px) {
+
 }
