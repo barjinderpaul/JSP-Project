@@ -17,22 +17,8 @@ public class ContactUsServlet extends HttpServlet {
         String message = request.getParameter("message");
 
         PrintWriter out = response.getWriter();
-//        out.println("name = " + name
-//                    + "mobile number = " + mobileNumber
-//                    + "email = " + email
-//                    + "message = " + message
-//                    );
 
-//        request.setAttribute("sum", sum);
-//        request.setAttribute("diff",diff);
-//        request.setAttribute("mul",mul);
-//        request.setAttribute("div",div);
-//
-//        request.setAttribute("firstNumber",firstNumber);
-//        request.setAttribute("secondNumber",secondNumber);
-//
-//        RequestDispatcher rd = request.getRequestDispatcher("advanceCalculations");
-          RequestDispatcher rd = request.getRequestDispatcher("feedback_submitted.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("feedback_submitted.jsp");
          rd.forward(request,response);
     }
 
