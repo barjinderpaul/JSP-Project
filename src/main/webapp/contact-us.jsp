@@ -16,15 +16,17 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-        <img src="https://res.cloudinary.com/finzy/image/upload/v1491394379/logoWeb1x_1_thzngg.png" alt="Logo">
-    </a>
-    <a class="navbar-brand" href="#">
-        <img src="https://finzy.com/assets/images/badge_small.png" width="60px" alt="">
-    </a>
-    <span>
-            NBFC-P2P
-        </span>
+    <div>
+        <a class="navbar-brand" href="#">
+            <img src="https://res.cloudinary.com/finzy/image/upload/v1491394379/logoWeb1x_1_thzngg.png" alt="Logo">
+        </a>
+        <a class="navbar-brand" href="#">
+            <img src="https://finzy.com/assets/images/badge_small.png" width="60px" alt="">
+        </a>
+        <span>
+                NBFC-P2P
+            </span>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,7 +56,7 @@
         <div class="col-xl-6 col-md-6 col-md-12 form-column">
             <h1>Do you have a question or feedback?</h1>
             <p>Send us a message and we will get back to you.</p>
-            <form action="feedback" class="contact-form-fields">
+            <form action="feedback" method="post" class="contact-form-fields">
                 <label for="name"> Your name <br>
                     <input type="text" id="name" name="name" required>
                 </label>

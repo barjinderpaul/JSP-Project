@@ -4,7 +4,9 @@ import javax.persistence.*;
 
 @Entity(name = "contact_us_entries")
 @Table(name = "contact_us_entries")
+//@NamedQuery(name="FeedbackEntries.findAll", query="SELECT entry FROM FeedbackEntries entry")
 public class FeedbackEntries {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
@@ -29,6 +31,14 @@ public class FeedbackEntries {
                 ", emailId='" + emailId + '\'' +
                 ", message='" + message + '\'' +
                 '}';
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {

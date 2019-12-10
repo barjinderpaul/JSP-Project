@@ -5,7 +5,7 @@
              version="2.1">
 
     <persistence-unit name="contactUsPersistanceUnit" transaction-type="RESOURCE_LOCAL">
-
+        <class>com.feedback.ContactUsServlet</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/contact_us" /> <!-- BD Mane -->
@@ -15,5 +15,6 @@
         </properties>
 
     </persistence-unit>
+
 
 </persistence>
