@@ -55,10 +55,21 @@
 
                 <label class="apply-loan-div-label">Loan Purpose</label>
                 <select class="custom-dropdown" name="cars">
-                    <option class="dropdown-option" value="volvo">Volvo</option>
-                    <option class="dropdown-option" value="saab">Saab</option>
-                    <option class="dropdown-option" value="fiat">Fiat</option>
-                    <option class="dropdown-option" value="audi">Audi</option>
+                    <option class="dropdown-option" value="debt-consolidation">Debt Consolidation</option>
+                    <option class="dropdown-option" value="home-improvement">Home Improvement</option>
+                    <option class="dropdown-option" value="education">Education</option>
+                    <option class="dropdown-option" value="appliances-and-electronics">Appliances and Electronics</option>
+                    <option class="dropdown-option" value="wedding">Wedding</option>
+                    <option class="dropdown-option" value="event-or-occasion">Event/Occasion</option>
+                    <option class="dropdown-option" value="travel-or-holiday">Travel/Holiday</option>
+                    <option class="dropdown-option" value="medical-expenses">Medical Expenses</option>
+                    <option class="dropdown-option" value="business-investment">Business Investment</option>
+                    <option class="dropdown-option" value="vehicle-purchase">Vehicle Purchase</option>
+                    <option class="dropdown-option" value="down-payment">Down Payment</option>
+                    <option class="dropdown-option" value="security-or-rental-deposit">Security or Rental Deposit</option>
+                    <option class="dropdown-option" value="investment">Investment</option>
+                    <option class="dropdown-option" value="others">Others</option>
+
                 </select>
 
             </div>
