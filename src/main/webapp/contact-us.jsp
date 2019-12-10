@@ -54,15 +54,15 @@
         <div class="col-xl-6 col-md-6 col-md-12 form-column">
             <h1>Do you have a question or feedback?</h1>
             <p>Send us a message and we will get back to you.</p>
-            <form action="" class="contact-form-fields">
+            <form action="feedback" class="contact-form-fields">
                 <label for="name"> Your name <br>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="name" required>
                 </label>
                 <label for="mob-no"> Mobile Number <br>
-                    <input type="number" id="mob-no" required>
+                    <input type="number" id="mob-no" name="mob-no" required>
                 </label>
                 <label for="email"> Email <br>
-                    <input type="text" id="email" required>
+                    <input type="text" id="email" name="email" required>
                 </label>
                 <label for="message-field">Enter message <br><br>
                     <textarea name="message" id="message-field" cols="50" rows="4">

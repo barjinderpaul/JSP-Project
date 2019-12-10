@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>FeedbackSuccess</servlet-name>
+        <servlet-class>com.feedback.ContactUsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FeedbackSuccess</servlet-name>
+        <url-pattern>/feedback</url-pattern>
+    </servlet-mapping>
+
 </web-app>
