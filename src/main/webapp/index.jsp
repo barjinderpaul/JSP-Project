@@ -10,18 +10,20 @@
 <body>
 <div>
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="https://res.cloudinary.com/finzy/image/upload/v1491394379/logoWeb1x_1_thzngg.png" alt="Logo">
-        </a>
-        <a class="navbar-brand" href="#">
-            <img src="https://finzy.com/assets/images/badge_small.png" width="60px" alt="">
-        </a>
-        <span>
-            NBFC-P2P
-        </span>
+        <div>
+            <a class="navbar-brand" href="#">
+                <img src="https://res.cloudinary.com/finzy/image/upload/v1491394379/logoWeb1x_1_thzngg.png" alt="Logo">
+            </a>
+            <a class="navbar-brand" href="#">
+                <img src="https://finzy.com/assets/images/badge_small.png" width="60px" alt="">
+            </a>
+            <span>
+                NBFC-P2P
+            </span>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon bg-dark"></span>
+            <span class="navbar-toggler-icon bg-primary text-white"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,9 +34,9 @@
                     </a>
                 </li>
                 <li>
-                    <button class="btn">
-                        Login
-                    </button>
+                    <a href="login.jsp" class="login-btn">
+                        <input type="submit" class="btn" value="Login">
+                    </a>
                 </li>
 
         </ul>
