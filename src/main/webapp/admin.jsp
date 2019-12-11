@@ -51,9 +51,9 @@
                     </a>
                 </li>
                 <li>
-                    <button class="btn">
-                        Login
-                    </button>
+                    <a href="login.jsp" class="logout-btn">
+                        <input type="submit" class="btn" value="Logout">
+                    </a>
                 </li>
             </ul>
         </div>
