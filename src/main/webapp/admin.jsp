@@ -29,6 +29,7 @@
 </head>
 <body>
 
+    <%@ include file="html/navbar.jsp"%>
     <%
         //To prevent the use of back button to go back to pages.
         response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
@@ -40,40 +41,7 @@
         }
     %>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div>
-            <a class="navbar-brand" href="#">
-                <img src="https://res.cloudinary.com/finzy/image/upload/v1491394379/logoWeb1x_1_thzngg.png" alt="Logo">
-            </a>
-            <a class="navbar-brand" href="#">
-                <img src="https://finzy.com/assets/images/badge_small.png" width="60px" alt="">
-            </a>
-            <span>
-                    NBFC-P2P
-                </span>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto ">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.jsp">
-                        <p>Home</p>
-                    </a>
-                </li>
-                <li>
-                    <form action="logout">
-                        <a href="login.jsp" class="logout-btn">
-                            <input type="submit" class="btn" value="Logout">
-                        </a>
-                    </form>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <br><br>
 
     <h1 class="text-center">Feedback entries</h1><br>
