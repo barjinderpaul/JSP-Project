@@ -15,7 +15,7 @@
 
 <body>
 
-<%@ include file="html/navbar.jsp"%>
+<%@ include file="templates/navbar.jsp"%>
 
 <div class="jumbotron text-center">
     <h1 class="display-3">Thank You!</h1>
@@ -31,4 +31,4 @@
 
 
 
-<%@ include file="html/footer.html"%>
+<%@ include file="templates/footer.html"%>

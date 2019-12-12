@@ -29,7 +29,7 @@
 </head>
 <body>
 
-    <%@ include file="html/navbar.jsp"%>
+    <%@ include file="templates/navbar.jsp"%>
     <%
         //To prevent the use of back button to go back to pages.
         response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
@@ -101,4 +101,4 @@
 
 
 
-<%@ include file="html/footer.html"%>
+<%@ include file="templates/footer.html"%>

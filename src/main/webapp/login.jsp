@@ -16,7 +16,14 @@
 </head>
 <body>
 
-<%@ include file="html/navbar.jsp"%>
+<%
+    if(session.getAttribute("Username") != null ) {
+        response.sendRedirect("admin.jsp");
+    }
+%>
+
+<%@ include file="templates/navbar.jsp"%>
+
 <div class = "container">
         <div class="wrapper">
             <form action="login" method="post" name="Login_Form" class="form-signin">
@@ -33,4 +40,4 @@
         </div>
     </div>
 
-<%@ include file="html/footer.html"%>
+<%@ include file="templates/footer.html"%>

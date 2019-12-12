@@ -14,9 +14,7 @@
         <a class="navbar-brand" href="#">
             <img src="https://finzy.com/assets/images/badge_small.png" width="60px" alt="">
         </a>
-        <span>
-                    NBFC-P2P
-                </span>
+        <span> NBFC-P2P </span>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,9 +33,8 @@
                     <p>Contact Us</p>
                 </a>
             </li>
-            <%
-                if(session.getAttribute("Username") != null) {
-            %>
+
+            <% if(session.getAttribute("Username") != null) { %>
                 <li>
                     <form action="logout">
                         <a href="login.jsp" class="logout-btn" style="border-bottom: 0">
@@ -45,19 +42,13 @@
                         </a>
                     </form>
                 </li>
-            <%
-                }
-                else {
-            %>
+            <% } else { %>
                 <li>
                     <a href="login.jsp" class="login-btn">
                         <input type="submit" class="btn" value="Login">
                     </a>
                 </li>
-            <%
-                }
-            %>
-
+            <% } %>
 
         </ul>
     </div>

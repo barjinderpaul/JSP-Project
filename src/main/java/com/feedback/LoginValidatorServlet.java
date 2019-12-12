@@ -44,14 +44,15 @@ public class LoginValidatorServlet extends HttpServlet {
         criteriaQuery.where(predicateForUsernameAndPassword);
         List<Admin> adminData = entityManager.createQuery(criteriaQuery).getResultList();
 
+        entityManager.close();
+        entityManagerFactory.close();
+
        if(adminData.size() > 0) {
             HttpSession session = request.getSession();
             session.setAttribute("Username",username);
             response.sendRedirect("admin.jsp");
         }
         else {
-//            PrintWriter out = response.getWriter();
-//            out.print("Wrong Username password");
            request.setAttribute("errorMessage","Invalid username or password");
            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login.jsp");
            requestDispatcher.forward(request,response);

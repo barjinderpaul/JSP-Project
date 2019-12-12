@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4ef1860-cdd7-4a14-9a63-605ec067894e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/constants/WHY_BORROW_WITH_FINZY.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entities/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/ContactUsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/ContactUsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/FeedbackEntries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entities/FeedbackEntries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/LoginValidatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/LoginValidatorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/contact-us.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contact-us.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/feedback_submitted.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/feedback_submitted.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/navbar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
@@ -105,7 +104,8 @@
       <workItem from="1575998035689" duration="7705000" />
       <workItem from="1576090736051" duration="1260000" />
       <workItem from="1576124914763" duration="9818000" />
-      <workItem from="1576143671556" duration="11283000" />
+      <workItem from="1576143671556" duration="11326000" />
+      <workItem from="1576168081985" duration="6068000" />
     </task>
     <servers />
   </component>

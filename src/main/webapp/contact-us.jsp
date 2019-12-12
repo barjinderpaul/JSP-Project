@@ -15,7 +15,7 @@
 
 <body>
 
-<%@ include file="html/navbar.jsp"%>
+<%@ include file="templates/navbar.jsp"%>
 
 <div class="empty-div">
 
@@ -88,4 +88,4 @@
 </div>
 
 
-<%@ include file="html/footer.html"%>
+<%@ include file="templates/footer.html"%>

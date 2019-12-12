@@ -2,19 +2,21 @@
 <%@ page import="com.constants.DROPDOWN" %>
 <%@ page import="com.constants.HOW_FINZY_WORKS" %>
 <%@ page import="com.constants.TEAM" %>
+<%@ page import="com.constants.WHY_BORROW_WITH_FINZY" %>
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel='stylesheet' href='webjars/bootstrap/3.2.0/css/bootstrap.min.css'>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Finzy</title>
 </head>
 <body>
 
-<%@ include file="html/navbar.jsp"%>
+<%@ include file="templates/navbar.jsp"%>
 
+<%--Apply Loan--%>
 <div class="container-fluid bg-image row align-items-end justify-content-end">
     <div class="row">
         <h4 class="loan-heading">Quick personal loans. Low interest rates</h4>
@@ -25,21 +27,19 @@
                 </label>
             </div>
             <div class="apply-loan-div-column col-sm-3">
-
                 <label class="apply-loan-div-label">Loan Purpose</label>
                 <select class="custom-dropdown" name="loan-reasons">
+
                     <% for (DROPDOWN season : DROPDOWN.values()) { %>
                         <option class="dropdown-option" value="debt-consolidation"><%=season.label%></option>
                     <% } %>
-                </select>
 
+                </select>
             </div>
             <div class="apply-loan-div-column col-sm-3">
                 <label class="apply-loan-div-label" for="loan-duration">Tenure Duration<br>
                     <input class="apply-loan-div-input" type="text" id="loan-duration" placeholder="36 Months">
                 </label>
-
-
             </div>
             <div class="apply-loan-div-column col-sm-2">
                 <button class="apply-loan-div-button">
@@ -49,10 +49,10 @@
         </div>
         <div>
         </div>
-
     </div>
 </div>
 
+<%-- How finzy works --%>
 <div class="how-finzy-works ">
     <div class="row  align-items-center justify-content-center">
         <h1>How finzy works</h1>
@@ -63,6 +63,7 @@
     <br><br><br>
     <div class="container">
         <div class="row">
+
            <% for (HOW_FINZY_WORKS element : HOW_FINZY_WORKS.values()) { %>
                 <div class=" how-finzy-works-image-column col-sm-4 align-items-center justify-content-center">
                     <div class="how-finzy-works-image-div col-12">
@@ -72,10 +73,12 @@
                     </div>
                 </div>
             <% } %>
+
         </div>
     </div>
     <br><br>
 
+<%-- Process for loan apply   --%>
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <h1>What do I need to do for a Personal Loan</h1>
@@ -93,6 +96,7 @@
     </div>
     <br><br><br>
 
+<%--    Why borrow with finzy --%>
     <div class="container-fluid" id="why-borrow-with-finzy">
         <div class="row align-items-center justify-content-center">
             <h1 class="why-borrow-with-finzy-h1">Why Borrow with finzy</h1>
@@ -106,83 +110,33 @@
 
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="carousel-item-flex">
-                        <div class="carousel-item-content-flex">
-                            <h1>Quick. Easy</h1>
-                            <ul>
-                                <li>Online loan application process</li>
-                                <li>Loans funded in as less as 48 hours</li>
-                                <li>finzy facilitates execution of loan agreement either digitally or at your doorstep</li>
-                            </ul>
-                            <button>BORROW NOW</button>
+
+                <% int activeItemPrinted = 0; %>
+                <% for (WHY_BORROW_WITH_FINZY reason : WHY_BORROW_WITH_FINZY.values()) { %>
+                    <div class="carousel-item
+                         <% if(activeItemPrinted == 0){%>
+                                active">
+                        <%  activeItemPrinted = 1;
+                            } else { %>
+                            ">
+                        <% } %>
+                        <div class="carousel-item-flex">
+                            <div class="carousel-item-content-flex">
+                                <h1><%= reason.heading %></h1>
+                                <ul>
+                                    <% for (String res : reason.getListItems()) { %>
+                                        <li> <%= res %>  </li>
+                                    <% } %>
+                                </ul>
+                                <button>BORROW NOW</button>
+                            </div>
+                            <div>
+                                <img class="img-size " src=<%= reason.imgUrl %> alt="imagenotavailable">
+                            </div>
 
                         </div>
-                        <div>
-                            <img class="img-size " src="https://res.cloudinary.com/finzy/image/upload/v1496667973/Group_29_y89deb.png" alt="">
-                        </div>
-
                     </div>
-                </div>
-
-                <div class="carousel-item ">
-                    <div class="carousel-item-flex">
-                        <div class="carousel-item-content-flex">
-                            <h1>Flexibility and Transparency</h1>
-                            <p>At finzy we provide you the benefit of a low monthly EMI, thanks to our 36 month loan tenure. You also have the ability to prepay your loan fully or partially whenever you want with no penalties incurred.
-                            </p>
-
-                            <ul>
-                                <li>No hidden charges</li>
-                                <li>No lock-in</li>
-                                <li>Visual dashboards to track your transactions</li>
-
-                            </ul>
-                            <button>BORROW NOW</button>
-                        </div>
-                        <div>
-                            <img class="img-size " src="https://res.cloudinary.com/finzy/image/upload/v1496667973/Group_29_y89deb.png" alt="">
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="carousel-item ">
-                    <div class="carousel-item-flex">
-                        <div class="carousel-item-content-flex">
-                            <h1>Security and Privacy</h1>
-
-                            <ul>
-                                <li>our personal information is never revealed to evaluating investors</li>
-                                <li>Loans funded only by screened investors</li>
-                                <li>finzy assures your personal data is secure and not shared or misused</li>
-                                <li>finzy remains your contact point despite loans being funded by multiple investors</li>
-
-                            </ul>
-                            <button>BORROW NOW</button>
-                        </div>
-                        <div>
-                            <img class="img-size " src="https://res.cloudinary.com/finzy/image/upload/v1496667973/Group_29_y89deb.png" alt="">
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="carousel-item ">
-                    <div class="carousel-item-flex">
-                        <div class="carousel-item-content-flex">
-                            <h1>Credit Assessment </h1>
-                            <p> Our evaluation process goes beyond the traditional approach of banks. By assessing borrowers on multiple parameters and not limited to just credit score or only to employees of Selective Corporate, we are able to offer loans to a much larger borrower segment </p>
-                            <button>BORROW NOW</button>
-                        </div>
-                        <div>
-                            <img class="img-size " src="https://res.cloudinary.com/finzy/image/upload/v1496667973/Group_29_y89deb.png" alt="">
-                        </div>
-
-                    </div>
-                </div>
+                <% } %>
 
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -194,12 +148,9 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
     </div>
-
-
     <br>
+
 <%--    Team section--%>
     <div class="core-team ">
         <div class="row  align-items-center justify-content-center">
@@ -230,4 +181,4 @@
     </div>
 
 
-<%@ include file="html/footer.html"%>
+<%@ include file="templates/footer.html"%>
