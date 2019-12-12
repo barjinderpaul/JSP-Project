@@ -37,13 +37,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto ">
             <li class="nav-item active">
-                <a class="nav-link" href="contact-us.jsp">
-                    <p>Contact Us</p>
+                <a class="nav-link" href="index.jsp">
+                    <p>Home</p>
                 </a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="index.jsp">
-                    <p>Home</p>
+                <a class="nav-link" href="contact-us.jsp">
+                    <p>Contact Us</p>
                 </a>
             </li>
             <li>

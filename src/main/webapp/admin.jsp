@@ -6,6 +6,9 @@
 <%@ page import="java.util.*" %>
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="javax.persistence.Query" %>
+<%@ page import="javax.persistence.criteria.CriteriaBuilder" %>
+<%@ page import="javax.persistence.criteria.CriteriaQuery" %>
+<%@ page import="javax.persistence.criteria.Root" %>
 
 <%--
   Created by IntelliJ IDEA.
@@ -25,6 +28,17 @@
 
 </head>
 <body>
+
+    <%
+        //To prevent the use of back button to go back to pages.
+        response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+        response.setHeader("Pragma","no-cache");
+        response.setHeader("Expires","0");
+
+        if(session.getAttribute("Username") == null ) {
+            response.sendRedirect("login.jsp");
+        }
+    %>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div>
@@ -51,9 +65,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="login.jsp" class="logout-btn">
-                        <input type="submit" class="btn" value="Logout">
-                    </a>
+                    <form action="logout">
+                        <a href="login.jsp" class="logout-btn">
+                            <input type="submit" class="btn" value="Logout">
+                        </a>
+                    </form>
                 </li>
             </ul>
         </div>
@@ -61,12 +77,27 @@
     <br><br>
 
     <h1 class="text-center">Feedback entries</h1><br>
+<%--    <%!--%>
+<%--        public List<FeedbackEntries> getFeedback() {--%>
+<%--            EntityManagerFactory factory = Persistence.createEntityManagerFactory("contactUsPersistanceUnit");--%>
+<%--            EntityManager em = factory.createEntityManager();--%>
+<%--            Query q = em.createQuery("from contact_us_entries entry", FeedbackEntries.class);--%>
+<%--            return q.getResultList();--%>
+<%--        }--%>
+<%--    %>--%>
+
     <%!
         public List<FeedbackEntries> getFeedback() {
-            EntityManagerFactory factory = Persistence.createEntityManagerFactory("contactUsPersistanceUnit");
-            EntityManager em = factory.createEntityManager();
-            Query q = em.createQuery("from contact_us_entries entry", FeedbackEntries.class);
-            return q.getResultList();
+            EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("contactUsPersistanceUnit");
+            EntityManager entityManager = entityManagerFactory.createEntityManager();
+
+            CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
+            CriteriaQuery<FeedbackEntries> query = criteriaBuilder.createQuery(FeedbackEntries.class);
+            Root<FeedbackEntries> root = query.from(FeedbackEntries.class);
+
+            query.select(root);
+
+            return  entityManager.createQuery(query).getResultList();
         }
     %>
 

@@ -40,9 +40,9 @@
                 </a>
             </li>
             <li>
-                <button class="btn">
-                    Login
-                </button>
+                <a href="login.jsp" class="login-btn">
+                    <input type="submit" class="btn" value="Login">
+                </a>
             </li>
         </ul>
     </div>
