@@ -98,6 +98,7 @@
             query.select(root);
 
             return  entityManager.createQuery(query).getResultList();
+
         }
     %>
 

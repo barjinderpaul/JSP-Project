@@ -12,7 +12,7 @@ public class FeedbackEntries {
     @Column(name = "id", updatable = false, nullable = false)
     private Long id;
 
-    private String name;
+    public static String name;
 
     @Column(name = "mobile_no")
     private String mobileNumber;

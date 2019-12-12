@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e4ef1860-cdd7-4a14-9a63-605ec067894e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/FeedbackEntries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/FeedbackEntries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/LoginValidatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/LoginValidatorServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/contact-us.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contact-us.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/contact_us.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/contact_us.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/feedback_submitted.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/feedback_submitted.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,15 +49,16 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.11467892" />
     <property name="project.structure.side.proportion" value="0.45454547" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/tomcat/conf" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/java/com/feedback" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/contactus/feedback" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,7 +89,7 @@
       <workItem from="1575911541519" duration="976000" />
       <workItem from="1575998035689" duration="7705000" />
       <workItem from="1576090736051" duration="1260000" />
-      <workItem from="1576124914763" duration="2887000" />
+      <workItem from="1576124914763" duration="7994000" />
     </task>
     <servers />
   </component>
