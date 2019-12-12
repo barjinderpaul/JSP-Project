@@ -1,4 +1,8 @@
 <%--<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>--%>
+<%@ page import="com.constants.DROPDOWN" %>
+<%@ page import="com.constants.HOW_FINZY_WORKS" %>
+<%@ page import="com.constants.TEAM" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,22 +27,10 @@
             <div class="apply-loan-div-column col-sm-3">
 
                 <label class="apply-loan-div-label">Loan Purpose</label>
-                <select class="custom-dropdown" name="cars">
-                    <option class="dropdown-option" value="debt-consolidation">Debt Consolidation</option>
-                    <option class="dropdown-option" value="home-improvement">Home Improvement</option>
-                    <option class="dropdown-option" value="education">Education</option>
-                    <option class="dropdown-option" value="appliances-and-electronics">Appliances and Electronics</option>
-                    <option class="dropdown-option" value="wedding">Wedding</option>
-                    <option class="dropdown-option" value="event-or-occasion">Event/Occasion</option>
-                    <option class="dropdown-option" value="travel-or-holiday">Travel/Holiday</option>
-                    <option class="dropdown-option" value="medical-expenses">Medical Expenses</option>
-                    <option class="dropdown-option" value="business-investment">Business Investment</option>
-                    <option class="dropdown-option" value="vehicle-purchase">Vehicle Purchase</option>
-                    <option class="dropdown-option" value="down-payment">Down Payment</option>
-                    <option class="dropdown-option" value="security-or-rental-deposit">Security or Rental Deposit</option>
-                    <option class="dropdown-option" value="investment">Investment</option>
-                    <option class="dropdown-option" value="others">Others</option>
-
+                <select class="custom-dropdown" name="loan-reasons">
+                    <% for (DROPDOWN season : DROPDOWN.values()) { %>
+                        <option class="dropdown-option" value="debt-consolidation"><%=season.label%></option>
+                    <% } %>
                 </select>
 
             </div>
@@ -71,39 +63,17 @@
     <br><br><br>
     <div class="container">
         <div class="row">
-
-            <div class=" how-finzy-works-image-column col-sm-4 align-items-center justify-content-center">
-                <div class="how-finzy-works-image-div col-12">
-                    <img class="how-finzy-works-image"
-                         src="https://res.cloudinary.com/finzy/image/upload/v1496830327/Group_4_kendsi.png"
-                         alt="first-image">
-                    <br><br>
-                    <p class="col-12">Digitally Connect borrowers and investors</p>
+           <% for (HOW_FINZY_WORKS element : HOW_FINZY_WORKS.values()) { %>
+                <div class=" how-finzy-works-image-column col-sm-4 align-items-center justify-content-center">
+                    <div class="how-finzy-works-image-div col-12">
+                        <img class="how-finzy-works-image" src=<%=element.url%> alt=<%=element.alt%>>
+                        <br><br>
+                        <p class="col-12">Digitally Connect borrowers and investors</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4  align-items-center justify-content-center">
-                <div class="how-finzy-works-image-div col-12">
-                    <img class="how-finzy-works-image"
-                         src="https://res.cloudinary.com/finzy/image/upload/v1496830346/Group_3_tib7i9.png"
-                         alt="first-image">
-                    <br><br>
-                    <p class="col-12">Digitally Connect borrowers and investors</p>
-                </div>
-
-            </div>
-            <div class="col-sm-4 align-items-center justify-content-center">
-                <div class=" how-finzy-works-image-div col-12">
-                    <img class="how-finzy-works-image"
-                         src="https://res.cloudinary.com/finzy/image/upload/v1496830393/Group_2_v5rg2k.png"
-                         alt="first-image">
-                    <br><br>
-                    <p class="col-12">Digitally Connect borrowers and investors</p>
-
-                </div>
-            </div>
+            <% } %>
         </div>
     </div>
-
     <br><br>
 
     <div class="container">
@@ -120,9 +90,9 @@
             <img src="https://res.cloudinary.com/finzy/image/upload/v1498288560/borrower_2div_ghvugv.png"
                  alt="Personal loan">
         </div>
-
     </div>
     <br><br><br>
+
     <div class="container-fluid" id="why-borrow-with-finzy">
         <div class="row align-items-center justify-content-center">
             <h1 class="why-borrow-with-finzy-h1">Why Borrow with finzy</h1>
@@ -241,58 +211,23 @@
         <br>
         <div class="container-fluid ">
             <div class="row m-0 p-0 justify-content-center">
+
+                <% for (TEAM team_member : TEAM.values()) { %>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="card" style="width: 25rem;">
-                        <img src="https://res.cloudinary.com/finzy/image/upload/v1538986872/amit_ihskhe.jpg" class="card-img-top" alt="...">
-                        <div class="card-body text-center"">
-                            <h4>Amit More</h4>
-                            <p>Founder & CEO</p>
-                            <p class="card-text">Amit brings vision, business strategy and core financial sector domain knowledge to Finzy. Amit is an expert in the Indian Banking & Financial Services industry with over 16 years of experience across ICICI Bank, Credit Suisse AG and Edelweiss. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-xm-6 c">
-                    <div class="card" style="width: 25rem;">
-                        <img src="https://res.cloudinary.com/finzy/image/upload/v1538986872/abhinandan_aukpdl.jpg" class="card-img-top" alt="...">
-                        <div class="card-body text-center"">
-                            <h4>Abhinandan Sangam</h4>
-                            <p>Co-founder & CTO</p>
-                            <p class="card-text">Abhinandan is an expert in building capabilities across geographies. He oversees Tech and Product at finzy and has over 19 years of experience with organizations like ThoughtWorks, Sabre, MindTree, Siemens, Amadeus. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="card" style="width: 25rem;">
-                        <img src="https://res.cloudinary.com/finzy/image/upload/v1538986872/vishwas_ztkchg.jpg" class="card-img-top" alt="...">
+                        <img src=<%=team_member.imageUrl%> class="card-img-top" alt=<%= team_member.alt%> >
                         <div class="card-body text-center">
-                            <h4>Vishwas Dixit</h4>
-                            <p>Co-founder & CMO</p>
-                            <p class="card-text">Vishwas is the face of Finzy. With 23 years of Sales, Marketing & Distribution experience in organizations like Toyota, TVS and Dunlop,he brings in expertise in market expansion projects and creating distribution networks. </p>
+                            <h4><%= team_member.name %></h4>
+                            <p> <%= team_member.designation %> </p>
+                            <p class="card-text"> <%= team_member.about %> </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="card" style="width: 25rem;">
-                        <img src="https://res.cloudinary.com/finzy/image/upload/v1538986872/apoorv_mt9lo0.jpg" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h4>Apoorv Gawde</h4>
-                            <p>CIO & Head of Product</p>
-                            <p class="card-text">Apoorv has over 13 years of experience in envisioning and building digital products. He has worked across the globe to create and deliver products. With a passion for experience design, at finzy, he focuses on product strategy and service design. </p>
-                        </div>
-                    </div>
-                </div>
+                <% } %>
+
             </div>
         </div>
     </div>
 
-    <!-- YOUR CODE HERE -->
-    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>--%>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-    <%--<script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js"></script>--%>
-    <%--<script type="text/javascript" src="webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>--%>
-</div>
-</body>
-</html>
+
+<%@ include file="html/footer.html"%>

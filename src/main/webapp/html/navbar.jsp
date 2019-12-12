@@ -5,7 +5,6 @@
   Time: 12:50 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div>
@@ -41,7 +40,7 @@
             %>
                 <li>
                     <form action="logout">
-                        <a href="login.jsp" class="logout-btn">
+                        <a href="login.jsp" class="logout-btn" style="border-bottom: 0">
                             <input type="submit" class="btn" value="Logout">
                         </a>
                     </form>

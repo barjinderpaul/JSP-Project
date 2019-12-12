@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4ef1860-cdd7-4a14-9a63-605ec067894e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entities/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/ContactUsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/ContactUsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/FeedbackEntries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entities/FeedbackEntries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/LoginValidatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/LoginValidatorServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/contact-us.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contact-us.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/feedback_submitted.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/feedback_submitted.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/navbar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
@@ -25,11 +30,15 @@
         <option value="CSS File" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/index.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -56,6 +65,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.entities" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/target/tomcat/conf" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
@@ -93,6 +105,7 @@
       <workItem from="1575998035689" duration="7705000" />
       <workItem from="1576090736051" duration="1260000" />
       <workItem from="1576124914763" duration="9818000" />
+      <workItem from="1576143671556" duration="11283000" />
     </task>
     <servers />
   </component>

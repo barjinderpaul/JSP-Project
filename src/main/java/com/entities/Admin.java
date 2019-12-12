@@ -1,4 +1,4 @@
-package com.feedback;
+package com.entities;
 
 import javax.persistence.*;
 

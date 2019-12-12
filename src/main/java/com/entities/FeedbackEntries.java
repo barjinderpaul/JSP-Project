@@ -1,4 +1,4 @@
-package com.feedback;
+package com.entities;
 
 import javax.persistence.*;
 
@@ -12,7 +12,7 @@ public class FeedbackEntries {
     @Column(name = "id", updatable = false, nullable = false)
     private Long id;
 
-    public static String name;
+    public String name;
 
     @Column(name = "mobile_no")
     private String mobileNumber;

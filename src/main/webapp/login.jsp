@@ -17,10 +17,11 @@
 <body>
 
 <%@ include file="html/navbar.jsp"%>
-
 <div class = "container">
         <div class="wrapper">
             <form action="login" method="post" name="Login_Form" class="form-signin">
+                <h4><%= request.getAttribute("errorMessage")== null? "":request.getAttribute("errorMessage") %></h4>
+
                 <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
                 <hr class="colorgraph"><br>
 

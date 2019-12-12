@@ -1,11 +1,10 @@
 package com.feedback;
 
-import org.hibernate.Session;
+import com.entities.Admin;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
@@ -21,6 +20,12 @@ import java.io.PrintWriter;
 import java.util.List;
 
 public class LoginValidatorServlet extends HttpServlet {
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login.jsp");
+        requestDispatcher.forward(request,response);
+    }
+
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("Username");
         String password = request.getParameter("Password");
@@ -45,8 +50,11 @@ public class LoginValidatorServlet extends HttpServlet {
             response.sendRedirect("admin.jsp");
         }
         else {
-            PrintWriter out = response.getWriter();
-            out.print("Wrong Username password");
+//            PrintWriter out = response.getWriter();
+//            out.print("Wrong Username password");
+           request.setAttribute("errorMessage","Invalid username or password");
+           RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login.jsp");
+           requestDispatcher.forward(request,response);
         }
     }
 }
