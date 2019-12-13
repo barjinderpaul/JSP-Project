@@ -1,6 +1,8 @@
 package com.feedback;
 
+import com.constants.ENV;
 import com.entities.Admin;
+import org.mindrot.jbcrypt.BCrypt;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -22,6 +24,11 @@ import java.util.List;
 
 @WebServlet(value = "/login")
 public class LoginValidatorServlet extends HttpServlet {
+
+    private String generateHashedPassword (String password ) {
+        return BCrypt.hashpw(password, ENV.SALT.value);
+    }
+
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login.jsp");
         requestDispatcher.forward(request,response);
@@ -30,6 +37,7 @@ public class LoginValidatorServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("Username");
         String password = request.getParameter("Password");
+        String hashedPassword = generateHashedPassword(password);
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("contactUsPersistanceUnit");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
@@ -39,7 +47,7 @@ public class LoginValidatorServlet extends HttpServlet {
         Root<Admin> itemRoot = criteriaQuery.from(Admin.class);
 
         Predicate predicateForUsername = criteriaBuilder.equal(itemRoot.get("name"),username);
-        Predicate predicateForPassword = criteriaBuilder.equal(itemRoot.get("password"),password);
+        Predicate predicateForPassword = criteriaBuilder.equal(itemRoot.get("password"),hashedPassword);
         Predicate predicateForUsernameAndPassword = criteriaBuilder.and(predicateForUsername,predicateForPassword);
 
         criteriaQuery.where(predicateForUsernameAndPassword);

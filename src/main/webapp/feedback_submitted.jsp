@@ -1,5 +1,5 @@
 <jsp:include page="templates/navbar.jsp" >
-    <jsp:param name="cssFile" value="" />
+    <jsp:param name="cssFile" value="css/login.css" />
     <jsp:param name="title" value="Thank You!"/>
 </jsp:include>
 

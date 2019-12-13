@@ -16,8 +16,6 @@
     }
 %>
 
-<%--<%@ include file="templates/navbar.jsp" %>--%>
-
 <div class = "container">
         <div class="wrapper">
             <form action="login" method="post" name="Login_Form" class="form-signin">

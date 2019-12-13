@@ -57,6 +57,12 @@
                         <input type="submit" class="btn" value="Login">
                     </a>
                 </li>
+                <li>
+                    <a href="register.jsp" class="login-btn">
+                        <input type="submit" class="btn" value="Register">
+                    </a>
+                </li>
+
             <% } %>
 
         </ul>

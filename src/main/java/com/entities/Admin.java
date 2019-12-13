@@ -10,7 +10,6 @@ public class Admin {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
     private Long id;
-
     public String name;
     public String password;
 
