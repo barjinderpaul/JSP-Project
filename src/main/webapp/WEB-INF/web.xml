@@ -4,32 +4,4 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-
-    <servlet>
-        <servlet-name>FeedbackSuccess</servlet-name>
-        <servlet-class>com.feedback.ContactUsServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>FeedbackSuccess</servlet-name>
-        <url-pattern>/feedback</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>LoginValidator</servlet-name>
-        <servlet-class>com.feedback.LoginValidatorServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>LoginValidator</servlet-name>
-        <url-pattern>/login</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>Logout</servlet-name>
-        <servlet-class>com.feedback.LogoutServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Logout</servlet-name>
-        <url-pattern>/logout</url-pattern>
-    </servlet-mapping>
-
 </web-app>
