@@ -29,7 +29,13 @@
         }
     %>
     <br><br>
-    <h1 class="text-center">Feedback entries</h1><br>
+    <h1 class="text-center">Feedback entries</h1>
+    <form action="generateCSV" class="text-center">
+        <a href="login.jsp" class="logout-btn" style="border-bottom: 0">
+            <input type="submit" class="btn" value="Generate CSV">
+        </a>
+    </form>
+    <br>
 <%--    <%!--%>
 <%--        public List<FeedbackEntries> getFeedback() {--%>
 <%--            EntityManagerFactory factory = Persistence.createEntityManagerFactory("contactUsPersistanceUnit");--%>

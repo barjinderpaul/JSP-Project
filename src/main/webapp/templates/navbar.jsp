@@ -45,6 +45,11 @@
 
             <% if(session.getAttribute("Username") != null) { %>
                 <li>
+                    <a href="admin.jsp" class="logout-btn" style="border-bottom: 0">
+                        <input type="submit" class="btn" value="Home">
+                    </a>
+                </li>
+                <li>
                     <form action="logout">
                         <a href="login.jsp" class="logout-btn" style="border-bottom: 0">
                             <input type="submit" class="btn" value="Logout">
