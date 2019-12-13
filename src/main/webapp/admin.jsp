@@ -3,9 +3,6 @@
 <%@ page import="javax.persistence.Persistence" %>
 <%@ page import="javax.persistence.EntityManager" %>
 <%@ page import="javax.persistence.EntityManagerFactory" %>
-<%@ page import="java.util.*" %>
-<%@ page import="java.sql.ResultSet" %>
-<%@ page import="javax.persistence.Query" %>
 <%@ page import="javax.persistence.criteria.CriteriaBuilder" %>
 <%@ page import="javax.persistence.criteria.CriteriaQuery" %>
 <%@ page import="javax.persistence.criteria.Root" %>
@@ -17,19 +14,10 @@
   Time: 11:04 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Admin</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/admin.css">
-
-
-</head>
-<body>
-
-    <%@ include file="templates/navbar.jsp"%>
+<jsp:include page="templates/navbar.jsp" >
+    <jsp:param name="cssFile" value="css/admin.css" />
+    <jsp:param name="title" value="Feedback Results"/>
+</jsp:include>
     <%
         //To prevent the use of back button to go back to pages.
         response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
@@ -40,10 +28,7 @@
             response.sendRedirect("login.jsp");
         }
     %>
-
-
     <br><br>
-
     <h1 class="text-center">Feedback entries</h1><br>
 <%--    <%!--%>
 <%--        public List<FeedbackEntries> getFeedback() {--%>
@@ -93,12 +78,8 @@
                     <td><%= entry.getEmailId() %></td>
                     <td><%= entry.getMessage() %></td>
                 </tr>
-            <%
-                }
-            %>
+            <% } %>
         </tbody>
     </table>
-
-
 
 <%@ include file="templates/footer.html"%>

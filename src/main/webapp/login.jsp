@@ -5,16 +5,10 @@
   Time: 1:32 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/login.css">
-
-    <title>Admin Login</title>
-</head>
-<body>
+<jsp:include page="templates/navbar.jsp" >
+    <jsp:param name="cssFile" value="css/login.css" />
+    <jsp:param name="title" value="Admin Login"/>
+</jsp:include>
 
 <%
     if(session.getAttribute("Username") != null ) {
@@ -22,13 +16,16 @@
     }
 %>
 
-<%@ include file="templates/navbar.jsp"%>
+<%--<%@ include file="templates/navbar.jsp" %>--%>
 
 <div class = "container">
         <div class="wrapper">
             <form action="login" method="post" name="Login_Form" class="form-signin">
-                <h4><%= request.getAttribute("errorMessage")== null? "":request.getAttribute("errorMessage") %></h4>
-
+              <%if(request.getAttribute("errorMessage") != null ) { %>
+                <div class="alert alert-danger">
+                    <%= request.getAttribute("errorMessage")== null? "":request.getAttribute("errorMessage") %>
+                </div>
+               <% } %>
                 <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
                 <hr class="colorgraph"><br>
 

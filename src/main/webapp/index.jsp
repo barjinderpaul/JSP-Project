@@ -4,17 +4,10 @@
 <%@ page import="com.constants.TEAM" %>
 <%@ page import="com.constants.WHY_BORROW_WITH_FINZY" %>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>Finzy</title>
-</head>
-<body>
-
-<%@ include file="templates/navbar.jsp"%>
+<jsp:include page="templates/navbar.jsp" >
+    <jsp:param name="cssFile" value="css/style.css" />
+    <jsp:param name="title" value="Finzy"/>
+</jsp:include>
 
 <%--Apply Loan--%>
 <div class="container-fluid bg-image row align-items-end justify-content-end">
