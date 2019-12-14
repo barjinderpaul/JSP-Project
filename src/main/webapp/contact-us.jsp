@@ -23,8 +23,7 @@
                 </label>
                 <label for="message-field">Enter message <br><br>
                     <textarea name="message" id="message-field" cols="50" rows="4">
-
-                        </textarea>
+                    </textarea>
                 </label><br><br>
                 <button type="submit" class="submit-button">
                     Submit

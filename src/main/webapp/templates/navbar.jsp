@@ -33,37 +33,37 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto ">
             <li class="nav-item active">
-                <a class="nav-link" href="index.jsp">
+                <a class="nav-link" href="./">
                     <p>Home</p>
                 </a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="contact-us.jsp">
+                <a class="nav-link" href="feedback">
                     <p>Contact Us</p>
                 </a>
             </li>
 
             <% if(session.getAttribute("Username") != null) { %>
                 <li>
-                    <a href="admin.jsp" class="logout-btn" style="border-bottom: 0">
+                    <a href="admin" class="logout-btn" style="border-bottom: 0">
                         <input type="submit" class="btn" value="Feedback Entries">
                     </a>
                 </li>
                 <li>
                     <form action="logout">
-                        <a href="login.jsp" class="logout-btn" style="border-bottom: 0">
+                        <a href="login" class="logout-btn" style="border-bottom: 0">
                             <input type="submit" class="btn" value="Logout">
                         </a>
                     </form>
                 </li>
             <% } else { %>
                 <li>
-                    <a href="login.jsp" class="login-btn">
+                    <a href="login" class="login-btn">
                         <input type="submit" class="btn" value="Login">
                     </a>
                 </li>
                 <li>
-                    <a href="register.jsp" class="login-btn">
+                    <a href="register" class="login-btn">
                         <input type="submit" class="btn" value="Register">
                     </a>
                 </li>

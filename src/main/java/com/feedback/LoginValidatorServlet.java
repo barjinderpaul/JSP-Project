@@ -30,7 +30,7 @@ public class LoginValidatorServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("login.jsp");
         requestDispatcher.forward(request,response);
     }
 
@@ -59,11 +59,13 @@ public class LoginValidatorServlet extends HttpServlet {
        if(adminData.size() > 0) {
             HttpSession session = request.getSession();
             session.setAttribute("Username",username);
-            response.sendRedirect("admin.jsp");
+//           RequestDispatcher requestDispatcher = request.getRequestDispatcher("/admin");
+//            requestDispatcher.forward(request,response);
+            response.sendRedirect("admin");
         }
         else {
            request.setAttribute("errorMessage","Invalid username or password");
-           RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login.jsp");
+           RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login");
            requestDispatcher.forward(request,response);
         }
     }

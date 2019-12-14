@@ -36,30 +36,6 @@
         </a>
     </form>
     <br>
-<%--    <%!--%>
-<%--        public List<FeedbackEntries> getFeedback() {--%>
-<%--            EntityManagerFactory factory = Persistence.createEntityManagerFactory("contactUsPersistanceUnit");--%>
-<%--            EntityManager em = factory.createEntityManager();--%>
-<%--            Query q = em.createQuery("from contact_us_entries entry", FeedbackEntries.class);--%>
-<%--            return q.getResultList();--%>
-<%--        }--%>
-<%--    %>--%>
-
-    <%!
-        public List<FeedbackEntries> getFeedback() {
-            EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("contactUsPersistanceUnit");
-            EntityManager entityManager = entityManagerFactory.createEntityManager();
-
-            CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
-            CriteriaQuery<FeedbackEntries> query = criteriaBuilder.createQuery(FeedbackEntries.class);
-            Root<FeedbackEntries> root = query.from(FeedbackEntries.class);
-
-            query.select(root);
-
-            return  entityManager.createQuery(query).getResultList();
-
-        }
-    %>
 
     <table class="table table-striped table-bordered">
         <thead class="thead-dark">
@@ -73,10 +49,8 @@
         </thead>
         <tbody>
 
-            <%
-                List<FeedbackEntries> entries = getFeedback();
-                for( FeedbackEntries entry : entries ) {
-            %>
+            <% List<FeedbackEntries> entries = (List<FeedbackEntries>) request.getAttribute("entriesData");
+                for( FeedbackEntries entry : entries ) { %>
                 <tr scope="row">
                     <td><%= entry.getId() %></td>
                     <td><%= entry.getName() %></td>
