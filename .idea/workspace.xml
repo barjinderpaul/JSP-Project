@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e4ef1860-cdd7-4a14-9a63-605ec067894e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/DownloadCsvServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/DownloadCsvServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/navbar.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,7 +102,8 @@
       <workItem from="1576143671556" duration="11326000" />
       <workItem from="1576168081985" duration="6932000" />
       <workItem from="1576210389511" duration="15566000" />
-      <workItem from="1576262430609" duration="2464000" />
+      <workItem from="1576262430609" duration="2839000" />
+      <workItem from="1576297933135" duration="4869000" />
     </task>
     <servers />
   </component>

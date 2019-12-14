@@ -19,11 +19,19 @@
 <div class = "container">
     <div class="wrapper">
         <form action="register" method="post" name="Register-form" class="form-signin">
+
             <%if(request.getAttribute("errorMessage") != null ) { %>
-            <div class="alert alert-danger">
-                <%= request.getAttribute("errorMessage")== null? "":request.getAttribute("errorMessage") %>
-            </div>
+                <div class="alert alert-danger">
+                    <%= request.getAttribute("errorMessage")== null? "":request.getAttribute("errorMessage") %>
+                </div>
             <% } %>
+
+            <%if(request.getAttribute("adminExists") != null ) { %>
+                <div class="alert alert-danger">
+                    <%= request.getAttribute("adminExists")== null? "":request.getAttribute("adminExists") %>
+                </div>
+            <% } %>
+
             <h3 class="form-signin-heading">Register yourself</h3>
             <hr class="colorgraph"><br>
 

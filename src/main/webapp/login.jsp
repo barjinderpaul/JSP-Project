@@ -19,12 +19,20 @@
 <div class = "container">
         <div class="wrapper">
             <form action="login" method="post" name="Login_Form" class="form-signin">
+
               <%if(request.getAttribute("errorMessage") != null ) { %>
                 <div class="alert alert-danger">
                     <%= request.getAttribute("errorMessage")== null? "":request.getAttribute("errorMessage") %>
                 </div>
                <% } %>
-                <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
+
+              <%if(request.getAttribute("registerSuccessful") != null ) { %>
+                <div class="alert alert-success">
+                    <%= request.getAttribute("registerSuccessful")== null? "":request.getAttribute("registerSuccessful") %>
+                </div>
+              <% } %>
+
+                <h3 class="form-signin-heading">Welcome! Please Sign In</h3>
                 <hr class="colorgraph"><br>
 
                 <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />

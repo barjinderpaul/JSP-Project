@@ -46,7 +46,7 @@
             <% if(session.getAttribute("Username") != null) { %>
                 <li>
                     <a href="admin.jsp" class="logout-btn" style="border-bottom: 0">
-                        <input type="submit" class="btn" value="Home">
+                        <input type="submit" class="btn" value="Feedback Entries">
                     </a>
                 </li>
                 <li>

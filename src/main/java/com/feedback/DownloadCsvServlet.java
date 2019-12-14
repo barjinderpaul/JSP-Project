@@ -24,7 +24,6 @@ public class DownloadCsvServlet extends HttpServlet {
         response.setContentType("text/csv");
         String csvFileName =  "Feedback_Entries_" + System.currentTimeMillis()+".csv";
         response.setHeader("Content-disposition", "attachment; " + "filename=" + csvFileName);
-
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("contactUsPersistanceUnit");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
