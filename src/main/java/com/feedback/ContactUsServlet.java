@@ -45,8 +45,10 @@ public class ContactUsServlet extends HttpServlet {
         entityManager.close();
         entityManagerFactory.close();
 
-        RequestDispatcher rd = request.getRequestDispatcher("feedback_submitted.jsp");
-         rd.forward(request,response);
+//        RequestDispatcher rd = request.getRequestDispatcher("feedback_submitted.jsp");
+//         rd.forward(request,response);
+
+        response.sendRedirect("feedback_submitted.jsp");
     }
 
 }

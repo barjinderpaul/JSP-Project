@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4ef1860-cdd7-4a14-9a63-605ec067894e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/DownloadCsvServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/DownloadCsvServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/ContactUsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/ContactUsServlet.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/testing zips/JSP-Project-master(1)/JSP-Project-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -103,7 +99,10 @@
       <workItem from="1576168081985" duration="6932000" />
       <workItem from="1576210389511" duration="15566000" />
       <workItem from="1576262430609" duration="2839000" />
-      <workItem from="1576297933135" duration="4869000" />
+      <workItem from="1576297933135" duration="5168000" />
+      <workItem from="1576311380117" duration="3632000" />
+      <workItem from="1576321763386" duration="82000" />
+      <workItem from="1576321861502" duration="685000" />
     </task>
     <servers />
   </component>
