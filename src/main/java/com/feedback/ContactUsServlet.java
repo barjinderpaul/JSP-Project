@@ -13,11 +13,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(value = "/feedback")
+//@WebServlet(value = "/feedback")
 public class ContactUsServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/contact-us.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/contact-us.jsp");
         requestDispatcher.forward(request,response);
     }
 
@@ -26,6 +26,8 @@ public class ContactUsServlet extends HttpServlet {
         String mobileNumber = request.getParameter("mob-no");
         String email = request.getParameter("email");
         String message = request.getParameter("message");
+        message = message.replaceAll("\n","");
+        message = message.replaceAll("\r","");
 
 //        PrintWriter out = response.getWriter();
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("contactUsPersistanceUnit");
@@ -45,7 +47,7 @@ public class ContactUsServlet extends HttpServlet {
         entityManager.close();
         entityManagerFactory.close();
 
-        RequestDispatcher rd = request.getRequestDispatcher("feedback_submitted.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/feedback_submitted.jsp");
          rd.forward(request,response);
 
 //        response.sendRedirect("feedback_submitted.jsp");

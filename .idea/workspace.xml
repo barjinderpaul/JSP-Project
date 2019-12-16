@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4ef1860-cdd7-4a14-9a63-605ec067894e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/feedback/AdminServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/AdminServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/AdminServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/ContactUsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/ContactUsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/DownloadCsvServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/DownloadCsvServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/LoginValidatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/LoginValidatorServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/feedback/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/feedback/RegisterServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/contact-us.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contact-us.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/feedback_submitted.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/feedback_submitted.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/contact-us.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/contact-us.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/feedback_submitted.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/feedback_submitted.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +57,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mb-junit-practice/firstTry" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -67,11 +71,11 @@
       <recent name="com.entities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/target/tomcat/conf" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/target/tomcat/conf" />
       <recent name="$PROJECT_DIR$/src/main/java/com/feedback" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -111,7 +115,12 @@
       <workItem from="1576311380117" duration="3632000" />
       <workItem from="1576321763386" duration="82000" />
       <workItem from="1576321861502" duration="1630000" />
-      <workItem from="1576323582703" duration="7500000" />
+      <workItem from="1576323582703" duration="7582000" />
+      <workItem from="1576332652710" duration="446000" />
+      <workItem from="1576471245069" duration="2166000" />
+      <workItem from="1576479324954" duration="677000" />
+      <workItem from="1576482098433" duration="6243000" />
+      <workItem from="1576488527657" duration="259000" />
     </task>
     <servers />
   </component>

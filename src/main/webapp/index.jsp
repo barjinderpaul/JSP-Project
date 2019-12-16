@@ -4,7 +4,7 @@
 <%@ page import="com.constants.TEAM" %>
 <%@ page import="com.constants.WHY_BORROW_WITH_FINZY" %>
 
-<jsp:include page="templates/navbar.jsp" >
+<jsp:include page="/templates/navbar.jsp" >
     <jsp:param name="cssFile" value="css/style.css" />
     <jsp:param name="title" value="Finzy"/>
 </jsp:include>
@@ -174,4 +174,4 @@
     </div>
 
 
-<%@ include file="templates/footer.html"%>
+<%@ include file="/templates/footer.html"%>

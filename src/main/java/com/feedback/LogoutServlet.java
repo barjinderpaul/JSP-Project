@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(value = "/logout")
+//@WebServlet(value = "/logout")
 public class LogoutServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request , HttpServletResponse response) throws IOException {
         HttpSession session = request.getSession();

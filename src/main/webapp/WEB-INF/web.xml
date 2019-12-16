@@ -4,4 +4,80 @@
 
 <web-app >
   <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+      <servlet-name>ContactUs</servlet-name>
+<!--      <jsp-file>/WEB-INF/contact-us.jsp</jsp-file>-->
+      <servlet-class>com.feedback.ContactUsServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+      <servlet-name>GenerateCSV</servlet-name>
+      <servlet-class>com.feedback.DownloadCsvServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+      <servlet-name>LoginValidator</servlet-name>
+<!--      <jsp-file>/WEB-INF/login.jsp</jsp-file>-->
+      <servlet-class>com.feedback.LoginValidatorServlet</servlet-class>
+    </servlet>
+
+
+    <servlet>
+      <servlet-name>Logout</servlet-name>
+      <servlet-class>com.feedback.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+      <servlet-name>Register</servlet-name>
+<!--      <jsp-file>/WEB-INF/register.jsp</jsp-file>-->
+      <servlet-class>com.feedback.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+      <servlet-name>FeedbackData</servlet-name>
+<!--      <jsp-file>/WEB-INF/admin.jsp</jsp-file>-->
+      <servlet-class>com.feedback.AdminServlet</servlet-class>
+    </servlet>
+
+<!--    <servlet>-->
+<!--      <servlet-name>Home</servlet-name>-->
+<!--      <jsp-file>/WEB-INF/index.jsp</jsp-file>-->
+<!--    </servlet>-->
+
+    <servlet-mapping>
+      <servlet-name>ContactUs</servlet-name>
+      <url-pattern>/feedback</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+      <servlet-name>GenerateCSV</servlet-name>
+      <url-pattern>/generateCSV</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+      <servlet-name>LoginValidator</servlet-name>
+      <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+      <servlet-name>Logout</servlet-name>
+      <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+      <servlet-name>Register</servlet-name>
+      <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+      <servlet-name>FeedbackData</servlet-name>
+      <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+<!--    <servlet-mapping>-->
+<!--      <servlet-name>Home</servlet-name>-->
+<!--      <url-pattern>/</url-pattern>-->
+<!--    </servlet-mapping>-->
+
 </web-app>

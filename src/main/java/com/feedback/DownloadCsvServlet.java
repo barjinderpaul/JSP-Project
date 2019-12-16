@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-@WebServlet(value = "/generateCSV")
+//@WebServlet(value = "/generateCSV")
 public class DownloadCsvServlet extends HttpServlet {
     public void doGet(HttpServletRequest request , HttpServletResponse response) throws IOException {
 
@@ -40,7 +40,9 @@ public class DownloadCsvServlet extends HttpServlet {
         csvData.add(headerData);
 
         tableData.forEach(feedbackEntry->{
-            String stringEntry = "" + feedbackEntry.getId() + "," + feedbackEntry.getName() + "," + feedbackEntry.getMobileNumber() + "," + feedbackEntry.getEmailId() + "," + feedbackEntry.getMessage() + "\n";
+            String feedbackMessage = feedbackEntry.getMessage();
+            feedbackMessage = feedbackMessage.replaceAll("\n","");
+            String stringEntry = "" + feedbackEntry.getId() + "," + feedbackEntry.getName() + "," + feedbackEntry.getMobileNumber() + "," + feedbackEntry.getEmailId() + "," + feedbackMessage+ "\n";
             csvData.add(stringEntry);
         });
 

@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(value = "/register")
+//@WebServlet(value = "/register")
 public class RegisterServlet extends HttpServlet {
 
     private String generateHashedPassword (String password ) {
@@ -47,7 +47,7 @@ public class RegisterServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/register.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/register.jsp");
         requestDispatcher.forward(request,response);
     }
 
@@ -82,13 +82,13 @@ public class RegisterServlet extends HttpServlet {
                 entityManagerFactory.close();
 
                 request.setAttribute("registerSuccessful", "Successfully registered, please log in");
-                RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login.jsp");
+                RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/login.jsp");
                 requestDispatcher.forward(request, response);
             }
         }
         else {
             request.setAttribute("errorMessage","Passwords do not match");
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("/register.jsp");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/register.jsp");
             requestDispatcher.forward(request,response);
         }
     }

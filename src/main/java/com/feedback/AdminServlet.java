@@ -19,7 +19,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
 
-@WebServlet(value = "/admin")
+//@WebServlet(value = "/admin")
 public class AdminServlet extends HttpServlet {
 
     public List<FeedbackEntries> getFeedback() {
@@ -40,7 +40,7 @@ public class AdminServlet extends HttpServlet {
 
         List<FeedbackEntries> data = getFeedback();
         request.setAttribute("entriesData",data);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("admin.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/admin.jsp");
         requestDispatcher.forward(request,response);
     }
 

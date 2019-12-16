@@ -14,7 +14,7 @@
   Time: 11:04 PM
   To change this template use File | Settings | File Templates.
 --%>
-<jsp:include page="templates/navbar.jsp" >
+<jsp:include page="/templates/navbar.jsp" >
     <jsp:param name="cssFile" value="css/admin.css" />
     <jsp:param name="title" value="Feedback Results"/>
 </jsp:include>
@@ -62,4 +62,4 @@
         </tbody>
     </table>
 
-<%@ include file="templates/footer.html"%>
+<%@ include file="/templates/footer.html"%>

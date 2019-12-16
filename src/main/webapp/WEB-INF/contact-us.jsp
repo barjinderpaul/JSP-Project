@@ -1,4 +1,4 @@
-<jsp:include page="templates/navbar.jsp" >
+<jsp:include page="/templates/navbar.jsp" >
     <jsp:param name="cssFile" value="css/contact_us.css" />
     <jsp:param name="title" value="Contact Us"/>
 </jsp:include>
@@ -73,4 +73,4 @@
 </div>
 
 
-<%@ include file="templates/footer.html"%>
+<%@ include file="/templates/footer.html"%>

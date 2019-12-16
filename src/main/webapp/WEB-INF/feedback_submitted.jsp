@@ -1,4 +1,4 @@
-<jsp:include page="templates/navbar.jsp" >
+<jsp:include page="/templates/navbar.jsp" >
     <jsp:param name="cssFile" value="css/login.css" />
     <jsp:param name="title" value="Thank You!"/>
 </jsp:include>
@@ -17,4 +17,4 @@
 
 
 
-<%@ include file="templates/footer.html"%>
+<%@ include file="/templates/footer.html"%>

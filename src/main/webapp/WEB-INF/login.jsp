@@ -5,14 +5,14 @@
   Time: 1:32 PM
   To change this template use File | Settings | File Templates.
 --%>
-<jsp:include page="templates/navbar.jsp" >
+<jsp:include page="/templates/navbar.jsp" >
     <jsp:param name="cssFile" value="css/login.css" />
     <jsp:param name="title" value="Admin Login"/>
 </jsp:include>
 
 <%
     if(session.getAttribute("Username") != null ) {
-        response.sendRedirect("admin.jsp");
+        response.sendRedirect("admin");
     }
 %>
 
@@ -43,4 +43,4 @@
         </div>
     </div>
 
-<%@ include file="templates/footer.html"%>
+<%@ include file="/templates/footer.html"%>

@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet(value = "/login")
+//@WebServlet(value = "/login")
 public class LoginValidatorServlet extends HttpServlet {
 
     private String generateHashedPassword (String password ) {
@@ -30,7 +30,7 @@ public class LoginValidatorServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("login.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/WEB-INF/login.jsp");
         requestDispatcher.forward(request,response);
     }
 
@@ -65,7 +65,7 @@ public class LoginValidatorServlet extends HttpServlet {
         }
         else {
            request.setAttribute("errorMessage","Invalid username or password");
-           RequestDispatcher requestDispatcher = request.getRequestDispatcher("/login");
+           RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/login.jsp");
            requestDispatcher.forward(request,response);
         }
     }
